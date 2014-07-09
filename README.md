@@ -1,58 +1,28 @@
-country-list
-============
+ISO 3166 country codes
+======================
 
-Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.
+Maps ISO 3166-1-alpha-2 codes to English country names and vice versa. Works in the browser and in Node. Uses data from <http://data.okfn.org/data/country-list>.
 
-Uses data from http://data.okfn.org/data/country-list
+*Not yet available on npm.*
 
-# example 
+examples
+--------
 
-``` js
-var countries = require('country-list')();
+```js
+countryList.name("DE")       // "Germany"
+countryList.code("Germany")  // "DE"
 
-console.log(countries.getName('IS')); // Iceland
-console.log(countries.getCode('Iceland')); // IS
+countryList.code("germany")  // "DE"
+
+countryList.codes // ["AF", "AX", "AL", ...]
+countryList.names // ["Afghanistan", "Åland Islands", "Albania", ...]
+countryList       // [
+                  //   { "code": "AF", "name": "Afghanistan" },
+                  //   { "code": "AX", "name": "Åland Islands" },
+                  //   { "code": "AL", "name": "Albania" },
+                  //   ...
+                  // ]
+
+countryList.name("something-unknown")  // ""
+countryList.code("something-unknown")  // ""
 ```
-
-# methods
-
-Usage:
-
-```
-var countries = require('country-list')();
-```
-All input is case-insensitive.
-
-## getName(code)
-
-Expects a two-digit country code.
-Returns the name for that country.
-If not found, it returns `undefined`.
-
-## getCode(name)
-
-Expects the English country name.
-Returns the code for that country.
-If not found, it returns `undefined`.
-
-## getNames()
-
-Returns an array of all country names.
-
-## getCodes()
-
-Returns an array of all country codes.
-
-## getData()
-
-Returns an array of all country information, in the same format as it gets imported.
-
-# install
-
-``` cli
-npm install country-list
-```
-
-# license
-
-BSD
