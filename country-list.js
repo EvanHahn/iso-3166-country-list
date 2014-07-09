@@ -1,6 +1,6 @@
 (function() {
 
-  // define the list
+  // define the fat list
 
   var list = [
     { code: "AF", name: "Afghanistan" },
@@ -259,12 +259,27 @@
 
   // define the names and codes and lookups
 
+  var codeLookup = {};
+  var nameLookup = {};
+
   var country;
   for (var i = 0, len = list.length; i < len; i ++) {
     country = list[i];
     list.codes.push(country.code);
     list.names.push(country.name);
+    codeLookup[country.name.toLowerCase()] = country.code;
+    nameLookup[country.code] = country.name;
   }
+
+  // define the lookups
+
+  list.name = function name(code) {
+    return nameLookup[code.toUpperCase()];
+  };
+
+  list.code = function code(name) {
+    return codeLookup[name.toLowerCase()];
+  };
 
   // export this sucker
 

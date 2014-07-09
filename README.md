@@ -1,7 +1,7 @@
-ISO 3166 country codes
-======================
+ISO 3166 country list
+=====================
 
-Maps ISO 3166-1-alpha-2 codes to English country names and vice versa. Works in the browser and in Node. Uses data from <http://data.okfn.org/data/country-list>.
+Maps ISO 3166 codes to English country names and vice versa. Works in the browser and in Node. Uses data from <http://data.okfn.org/data/country-list>.
 
 *Not yet available on npm.*
 
@@ -12,6 +12,7 @@ examples
 countryList.name("DE")       // "Germany"
 countryList.code("Germany")  // "DE"
 
+countryList.name("de")       // "Germany"
 countryList.code("germany")  // "DE"
 
 countryList.codes  // ["AF", "AX", "AL", ...]
@@ -23,6 +24,6 @@ countryList        // [
                    //   ...
                    // ]
 
-countryList.name("something-unknown")  // ""
-countryList.code("something-unknown")  // ""
+countryList.name("something-unknown")  // undefined
+countryList.code("something-unknown")  // undefined
 ```
