@@ -6,14 +6,14 @@
     "Fannar Snær <fannar@lambagras.is>",
     "Eiríkur Heiðar Nilsson <eirikur@nilsson.is>"
   ],
-  "description": "Maps ISO 3166-1-alpha-2 codes to English country names and vice versa.",
+  "description": "2-letter country codes to English and vice-versa",
   "main": "country-list.js",
   "scripts": {
     "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/EvanHahn/country-list.git"
+    "url": "git://github.com/EvanHahn/iso-3166-country-list.git"
   },
   "keywords": [
     "country",
@@ -23,9 +23,9 @@
   ],
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/EvanHahn/country-list/issues"
+    "url": "https://github.com/EvanHahn/iso-3166-country-list/issues"
   },
-  "homepage": "https://github.com/EvanHahn/country-list",
+  "homepage": "https://github.com/EvanHahn/iso-3166-country-list",
   "devDependencies": {
     "coffee-script": "1.7.x",
     "mocha": "1.20.x",
