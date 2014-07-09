@@ -1,5 +1,7 @@
 (function() {
 
+  // define the list
+
   var list = [
     { code: "AF", name: "Afghanistan" },
     { code: "AX", name: "Åland Islands" },
@@ -251,5 +253,24 @@
     { code: "ZM", name: "Zambia" },
     { code: "ZW", name: "Zimbabwe" }
   ];
+
+  list.codes = [];
+  list.names = [];
+
+  // define the names and codes and lookups
+
+  var country;
+  for (var i = 0, len = list.length; i < len; i ++) {
+    country = list[i];
+    list.codes.push(country.code);
+    list.names.push(country.name);
+  }
+
+  // export this sucker
+
+  if (typeof module !== "undefined")
+    module.exports = list;
+  else
+    this.countryList = list;
 
 })();
