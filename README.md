@@ -5,10 +5,7 @@ Maps ISO 3166 codes to English country names and vice versa. Works in the browse
 
 I built this because I couldn't find something that did exactly what I wanted _and_ worked in the browser.
 
-*Not yet available on npm.*
-
-examples
---------
+Available on npm as `iso-3166-country-list`.
 
 ```js
 countryList.name("DE")       // "Germany"
