@@ -1,5 +1,5 @@
 {
-  "name": "country-list",
+  "name": "iso-3166-country-list",
   "version": "0.1.0",
   "author": "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)",
   "contributors": [
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/EvanHahn/country-list",
   "devDependencies": {
-    "coffee-script": "^1.7.1",
+    "coffee-script": "1.7.x",
     "mocha": "1.20.x",
-    "should": "^4.0.4"
+    "should": "4.0.x"
   }
 }
