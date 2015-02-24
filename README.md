@@ -1,11 +1,25 @@
 ISO 3166 country list
 =====================
 
-Maps ISO 3166 codes to English country names and vice versa. Works in the browser and in Node.
+Maps [ISO 3166 codes](http://www.iso.org/iso/country_codes.htm) to English country names and vice versa. I built this because I couldn't find something that did exactly what I wanted _and_ worked in the browser.
 
-I built this because I couldn't find something that did exactly what I wanted _and_ worked in the browser.
+In the browser:
 
-Available on npm as `iso-3166-country-list`.
+```html
+<script src="country-list.js"></script>
+<script>
+countryList.name("DE")  // "Germany"
+</script>
+```
+
+In Node/Browserify, run `npm install iso-3166-country-list`:
+
+```js
+var countryList = require("iso-3166-country-list");
+countryList.code("Germany")  // "DE"
+```
+
+Here are some usage examples:
 
 ```js
 countryList.name("DE")       // "Germany"
