@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/EvanHahn/iso-3166-country-list",
   "devDependencies": {
-    "coffee-script": "1.7.x",
-    "mocha": "1.20.x",
-    "should": "4.0.x"
+    "coffee-script": "^1.9.1",
+    "mocha": "^2.1.0",
+    "should": "^5.0.1"
   }
 }
