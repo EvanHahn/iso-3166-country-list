@@ -99,7 +99,7 @@
     { code: "GW", name: "Guinea-Bissau" },
     { code: "GY", name: "Guyana" },
     { code: "HT", name: "Haiti" },
-    { code: "HM", name: "Heard Island and McDonald Mcdonald Islands" },
+    { code: "HM", name: "Heard Island and McDonald Islands" },
     { code: "VA", name: "Holy See (Vatican City State)" },
     { code: "HN", name: "Honduras" },
     { code: "HK", name: "Hong Kong" },
