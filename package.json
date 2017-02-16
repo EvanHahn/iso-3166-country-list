@@ -33,5 +33,11 @@
     "coffee-script": "^1.9.1",
     "mocha": "^3.2.0",
     "standard": "^8.6.0"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "it"
+    ]
   }
 }
