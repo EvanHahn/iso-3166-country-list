@@ -1,16 +1,16 @@
-assert = require "assert"
+assert = require("chai").assert
 countryList = require ".."
 
 describe "lookups", ->
 
   it "should be able to look up properly-capitalized Germany", ->
-    countryList.name("DE").should.eql "Germany"
-    countryList.code("Germany").should.eql "DE"
+    assert.equal(countryList.name("DE"), "Germany")
+    assert.equal(countryList.code("Germany"), "DE")
 
   it "should be able to look up improperly-capitalized Germany", ->
-    countryList.name("dE").should.eql "Germany"
-    countryList.code("germany").should.eql "DE"
+    assert.equal(countryList.name("dE"), "Germany")
+    assert.equal(countryList.code("germany"), "DE")
 
   it "should return undefined with unknown values", ->
-    assert.equal(countryList.name("something-unknown"), undefined)
-    assert.equal(countryList.code("something-unknown"), undefined)
+    assert.isUndefined(countryList.name("something-unknown"))
+    assert.isUndefined(countryList.code("something-unknown"))
