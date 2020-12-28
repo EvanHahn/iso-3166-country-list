@@ -1,5 +1,5 @@
-var assert = require('chai').assert
-var pkg = require('../package.json')
+const assert = require('chai').assert
+const pkg = require('../package.json')
 
 describe('package.json', function () {
   it('has no dependencies', function () {

@@ -1,7 +1,7 @@
-var assert = require('chai').assert
-var countryList = require('..')
+const assert = require('chai').assert
+const countryList = require('..')
 
-var COUNTRY_COUNT = 249
+const COUNTRY_COUNT = 249
 
 describe('lists', function () {
   describe('master list', function () {

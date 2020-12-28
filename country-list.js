@@ -1,7 +1,7 @@
 (function () {
   // define the fat list
 
-  var list = [
+  const list = [
     { code: 'AF', name: 'Afghanistan' },
     { code: 'AX', name: 'Åland Islands' },
     { code: 'AL', name: 'Albania' },
@@ -258,11 +258,11 @@
 
   // define the names and codes and lookups
 
-  var codeLookup = {}
-  var nameLookup = {}
+  const codeLookup = {}
+  const nameLookup = {}
 
-  var country
-  for (var i = 0, len = list.length; i < len; i++) {
+  let country
+  for (let i = 0, len = list.length; i < len; i++) {
     country = list[i]
     list.codes.push(country.code)
     list.names.push(country.name)
@@ -287,4 +287,4 @@
   } else {
     this.countryList = list
   }
-})();  // eslint-disable-line semi
+})(); // eslint-disable-line semi
