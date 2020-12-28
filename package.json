@@ -13,7 +13,7 @@
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check \"**/*.{md,js,json}\"",
     "format": "prettier --write \"**/*.{md,js,json}\"",
-    "test": "mocha"
+    "test": "node test"
   },
   "repository": {
     "type": "git",
@@ -33,13 +33,6 @@
   "homepage": "https://github.com/EvanHahn/iso-3166-country-list",
   "devDependencies": {
     "eslint": "^7.13.0",
-    "mocha": "^8.2.1",
     "prettier": "^2.2.1"
-  },
-  "standard": {
-    "globals": [
-      "describe",
-      "it"
-    ]
   }
 }
