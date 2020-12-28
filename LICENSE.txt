@@ -1,4 +1,4 @@
-Copyright (c) 2014-2017, Evan Hahn
+Copyright (c) 2014-2020, Evan Hahn
 
 Original code copyright (c) 2014, Fannar Snær Harðarson
 Under the same license
