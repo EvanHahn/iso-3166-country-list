@@ -31,12 +31,15 @@ countryList.code("germany"); // 'DE'
 
 countryList.codes; // ['AF', 'AX', 'AL', ...]
 countryList.names; // ['Afghanistan', 'Åland Islands', 'Albania', ...]
-countryList; // [
-//   { 'code': 'AF', 'name': 'Afghanistan' },
-//   { 'code': 'AX', 'name': 'Åland Islands' },
-//   { 'code': 'AL', 'name': 'Albania' },
-//   ...
-// ]
+countryList;
+/*
+  [
+    { code: 'AF', name: 'Afghanistan' },
+    { code: 'AX', name: 'Åland Islands' },
+    { code: 'AL', name: 'Albania' },
+    ...
+  ]
+*/
 
 countryList.name("something-unknown"); // undefined
 countryList.code("something-unknown"); // undefined
