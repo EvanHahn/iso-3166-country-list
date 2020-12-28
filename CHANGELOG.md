@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+### Changed
+
+- Update data for `BO`, `CV`, `CD`, `CZ`, `VA`, `IR`, `KP`, `KR`, `MK`, `FM`, `MD`, `SZ`, `TW`, `GB`, `US`, `VE`, `VG`, and `VI`
+
 ### Fixed
 
 - `name()` and `code()` could return properties on `Object.prototype`
