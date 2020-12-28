@@ -4,6 +4,7 @@
 
 ### Changed
 
+- Marked package as deprecated
 - Update data for `BO`, `CV`, `CD`, `CZ`, `VA`, `IR`, `KP`, `KR`, `MK`, `FM`, `MD`, `SZ`, `TW`, `GB`, `US`, `VE`, `VG`, and `VI`
 
 ### Fixed

@@ -1,5 +1,7 @@
 # ISO 3166 country list
 
+**This package will still be maintained, but no new features will be added and data may be out of date.** I recommend [`i18n-iso-countries`](https://www.npmjs.com/package/i18n-iso-countries) instead.
+
 Maps [ISO 3166 codes](http://www.iso.org/iso/country_codes.htm) to English country names and vice versa. I built this because I couldn't find something that did exactly what I wanted _and_ worked in the browser.
 
 In the browser:
