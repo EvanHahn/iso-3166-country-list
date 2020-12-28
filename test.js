@@ -21,6 +21,8 @@ assert(countryList.codes.includes("BS"));
 assert.strictEqual(countryList.code("Germany"), "DE");
 assert.strictEqual(countryList.code("germanY"), "DE");
 assert.strictEqual(countryList.code("unknown"), undefined);
+assert.strictEqual(countryList.code("constructor"), undefined);
+assert.strictEqual(countryList.code("__proto__"), undefined);
 
 assert(countryList.names.includes("Bahamas"));
 assert(countryList.names.includes("Germany"));
@@ -28,3 +30,5 @@ assert(countryList.names.includes("Spain"));
 assert.strictEqual(countryList.name("DE"), "Germany");
 assert.strictEqual(countryList.name("dE"), "Germany");
 assert.strictEqual(countryList.name("unknown"), undefined);
+assert.strictEqual(countryList.name("constructor"), undefined);
+assert.strictEqual(countryList.name("__proto__"), undefined);

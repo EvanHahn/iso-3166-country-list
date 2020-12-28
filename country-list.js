@@ -258,8 +258,8 @@
 
   // define the names and codes and lookups
 
-  var codeLookup = {};
-  var nameLookup = {};
+  var codeLookup = Object.create(null);
+  var nameLookup = Object.create(null);
 
   var country;
   for (var i = 0, len = list.length; i < len; i++) {
