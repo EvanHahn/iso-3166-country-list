@@ -1,4 +1,4 @@
-const assert = require("chai").assert;
+const assert = require("assert");
 const countryList = require("..");
 
 const COUNTRY_COUNT = 249;
@@ -6,7 +6,7 @@ const COUNTRY_COUNT = 249;
 describe("lists", function () {
   describe("master list", function () {
     it("contains " + COUNTRY_COUNT + " countries", function () {
-      assert.lengthOf(countryList, COUNTRY_COUNT);
+      assert.strictEqual(countryList.length, COUNTRY_COUNT);
     });
 
     it("contains a bunch of countries", function () {
@@ -34,25 +34,25 @@ describe("lists", function () {
 
     describe("codes list", function () {
       it("contains " + COUNTRY_COUNT + " codes", function () {
-        assert.lengthOf(countryList.codes, COUNTRY_COUNT);
+        assert.strictEqual(countryList.codes.length, COUNTRY_COUNT);
       });
 
       it("contains various countries", function () {
-        assert.include(countryList.codes, "ES");
-        assert.include(countryList.codes, "US");
-        assert.include(countryList.codes, "BS");
+        assert(countryList.codes.includes("ES"));
+        assert(countryList.codes.includes("US"));
+        assert(countryList.codes.includes("BS"));
       });
     });
 
     describe("names list", function () {
       it("contains " + COUNTRY_COUNT + " names", function () {
-        assert.lengthOf(countryList.names, COUNTRY_COUNT);
+        assert.strictEqual(countryList.names.length, COUNTRY_COUNT);
       });
 
       it("contains various countries", function () {
-        assert.include(countryList.names, "Bahamas");
-        assert.include(countryList.names, "Germany");
-        assert.include(countryList.names, "Spain");
+        assert(countryList.names.includes("Bahamas"));
+        assert(countryList.names.includes("Germany"));
+        assert(countryList.names.includes("Spain"));
       });
     });
   });

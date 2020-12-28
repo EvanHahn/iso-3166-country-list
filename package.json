@@ -32,7 +32,6 @@
   },
   "homepage": "https://github.com/EvanHahn/iso-3166-country-list",
   "devDependencies": {
-    "chai": "^4.2.0",
     "eslint": "^7.13.0",
     "mocha": "^8.2.1",
     "prettier": "^2.2.1"
