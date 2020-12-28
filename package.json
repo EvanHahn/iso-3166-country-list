@@ -9,7 +9,10 @@
   "description": "2-letter country codes to English and vice-versa",
   "main": "country-list.js",
   "scripts": {
-    "pretest": "standard --fix",
+    "pretest": "npm run lint:eslint && npm run lint:prettier",
+    "lint:eslint": "eslint .",
+    "lint:prettier": "prettier --check \"**/*.{md,js,json}\"",
+    "format": "prettier --write \"**/*.{md,js,json}\"",
     "test": "mocha"
   },
   "repository": {
@@ -30,8 +33,9 @@
   "homepage": "https://github.com/EvanHahn/iso-3166-country-list",
   "devDependencies": {
     "chai": "^4.2.0",
+    "eslint": "^7.13.0",
     "mocha": "^8.2.1",
-    "standard": "^16.0.3"
+    "prettier": "^2.2.1"
   },
   "standard": {
     "globals": [
